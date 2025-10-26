@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mochudi Center Chiefs FC</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <span>(News).... (Fans Zone)..</span>
+      <input type="search" placeholder="Search..."/>
+    </div>
+
+    <nav>
+      <img src="MIN_ESC_MOCHUDI CENTRE CHIEFS S.C..png" alt="Club Logo" class="logo"/>
+      <ul class="nav">
+        <li><a href="index.html"class="active">HOME</a> <span class="arrow"></span></li>
+        <li><a href="fixtures.html">FIXTURES</a> <span class="arrow"></span></li>
+        <li><a href="players.html">PLAYERS</a> <span class="arrow"></span></li>
+        <li><a href="gallery.html">GALLERY</a> <span class="arrow"></span></li>
+        <li><a href="contact.html">CONTACT</a> <span class="arrow"></span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+<section class="hero">
+  <img src="cover.jpeg" alt="Team Photo" class="hero-img"/>
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h2>"Built by Legacy, Driven by Passion"</h2>
+    <button>Explore more</button>
+  </div>
+</section>
+
+<!-- Cards Section -->
+<!-- Cards Section with toggle images -->
+<style>
+  /* Hide the button by default */
+  .card button {
+    display: none;
+  }
+  /* Show the button when hovering over the card */
+  .card:hover button {
+    display: inline-block;
+  }
+</style>
+
+<section class="sections" style="display:flex; justify-content:space-around; padding:20px; flex-wrap: wrap;">
+  <!-- FIXTURES Card -->
+  <div class="card" style="text-align:center; width: 300px; margin: 10px; position:relative;">
+    <h3 style="background-color: black; color: white; padding: 10px;"><a href="fixtures.html" style="text-decoration:none; color:inherit;">FIXTURES</a></h3>
+    <!-- Visible images -->
+    <div class="images-container">
+      <img src="488553128_1140458638125009_4739004890162821574_n.jpeg" alt="Fixture 1" style="width:200px; margin-bottom:10px;"/>
+    </div>
+    <!-- Hidden images to toggle -->
+    <div class="additional-images" style="display:none;">
+      <img src="557745450_1294179602752911_4484708843400715821_n.jpeg" alt="Fixture 3" style="width:200px; margin-top:10px;"/>
+    </div>
+    <!-- See more button -->
+    <button onclick="toggleImages(this)" style="margin-top:10px; padding:5px 10px; cursor:pointer; background-color: black; color: white; border: none; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">more</button>
+  </div>
+
+  <!-- PLAYERS Card -->
+  <div class="card" style="text-align:center; width: 300px; margin: 10px; position:relative;">
+    <h3 style="background-color: black; color: white; padding: 10px;"><a href="players.html" style="text-decoration:none; color:inherit;">PLAYERS</a></h3>
+    <!-- Visible images -->
+    <div class="images-container">
+      <img src="489975693_1143917081112498_6800836980828463627_n.jpeg" alt="Player 1" style="width:200px; margin-bottom:10px;"/>
+    </div>
+    <!-- Hidden images to toggle -->
+    <div class="additional-images" style="display:none;">
+      <img src="556862379_1289646629872875_4784646074796506018_n.jpeg" alt="Player 2" style="width:200px; margin-top:10px;"/>
+    </div>
+    <!-- See more button -->
+    <button onclick="toggleImages(this)" style="margin-top:10px; padding:5px 10px; cursor:pointer; background-color: black; color: white; border: none; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">more</button>
+  </div>
+
+  <!-- GALLERY Card -->
+  <div class="card" style="text-align:center; width: 300px; margin: 10px; position:relative;">
+    <h3 style="background-color: black; color: white; padding: 10px;"><a href="gallery.html" style="text-decoration:none; color:inherit;">GALLERY</a></h3>
+    <!-- Visible images -->
+    <div class="images-container">
+      <img src="514951762_1211380361032836_8128510970347948717_n.jpeg" alt="Gallery 1" style="width:200px; margin-bottom:10px;"/>
+    </div>
+    <!-- Hidden images to toggle -->
+    <div class="additional-images" style="display:none;">
+      <img src="515258429_1210860137751525_7611938113627820212_n.jpeg" alt="Gallery 2" style="width:200px; margin-top:10px;"/>
+    </div>
+    <!-- See more button -->
+    <button onclick="toggleImages(this)" style="margin-top:10px; padding:5px 10px; cursor:pointer; background-color: black; color: white; border: none; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">more</button>
+  </div>
+</section>
+
+<!-- Toggle function -->
+<script>
+  function toggleImages(button) {
+    const card = button.closest('.card');
+    const hiddenImages = card.querySelector('.additional-images');
+    if (hiddenImages.style.display === 'none') {
+      hiddenImages.style.display = 'block';
+      button.textContent = '🔽 Show less';
+    } else {
+      hiddenImages.style.display = 'none';
+      button.textContent = '🔍 See more';
+    }
+  }
+</script>
+<!-- Removed the last gallery section -->
+<footer>
+  <div class="socials">
+    <a href="contact.html">
+      <img src="fb.png" alt="Facebook" />
+    </a>
+    <a href="contact.html">
+      <img src="insta.png" alt="Twitter" />
+    </a>
+    <a href="contact.html">
+      <img src="whats.png" alt="Instagram" />
+    </a>
+    <!-- Add more icons here if needed -->
+  </div>
+</footer>r>
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+<style>
+    /* Basic Reset & Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* ===== HEADER STYLES (Same as Home Page) ===== */
+
+/* Header container */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 125px;
+  background-color: #222;
+  color:#b9bdba;
+
+}
+
+.news-fans-zone {
+  margin-left: 20px !important;
+}
+}
+
+.top-bar input[type="search"] {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+.logo {
+  height: 70px;
+  margin-right: 20px;
+  margin-top: -40px;
+  padding: 5px 5px;
+}
+
+/* Navigation menu */
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation list items */
+.nav li {
+  margin-right: 20px;
+  position: relative;
+}
+
+/* Nav links */
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect — turns red */
+.nav a:hover {
+  color:red;;
+}
+
+/* Active link — highlights current page */
+.nav a.active {
+  color: #007bff;
+}
+
+/* Dropdown arrow beside each link */
+.arrow {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+
+/* Gallery styles */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.gallery-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.gallery-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+      background: #000;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .socials img {
+      width: 60px;
+      margin: 0 15px;
+      vertical-align: middle;
+    }
+  </style>
